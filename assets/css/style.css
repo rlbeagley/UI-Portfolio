@@ -1,0 +1,35 @@
+.hero-section {
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.hero-semi-circle {
+    width: 100vw;
+    height: 50vw;
+
+    background-color: #b7dff6;
+
+    border-top-left-radius: 50vw;
+    border-top-right-radius: 50vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    bottom: 0;
+}
+
+.hero-content {
+  text-align: center;
+
+  transform: translateY(-20%);
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
