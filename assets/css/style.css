@@ -33,3 +33,11 @@
   font-size: 3rem;
   font-weight: 800;
 }
+
+h1, h2 {
+
+}
+
+svg {
+    vertical-align: middle;
+}
