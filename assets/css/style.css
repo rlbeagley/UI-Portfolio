@@ -10,7 +10,7 @@
     width: 100vw;
     height: 50vw;
 
-    background-color: #b7dff6;
+    background-color: #98CDEB;
 
     border-top-left-radius: 50vw;
     border-top-right-radius: 50vw;
@@ -19,8 +19,7 @@
     justify-content: center;
     align-items: center;
 
-    position: absolute;
-    bottom: 0;
+    
 }
 
 .hero-content {
@@ -30,14 +29,69 @@
 }
 
 .hero-content h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 800;
+  color:#572C19;
 }
 
 h1, h2 {
+  font-family: "Sarina", cursive;
+  font-weight: bold;
+  font-style: normal;
 
+  color:#572C19 !important;
+  font-weight: bold;
+}
+
+h3, h4, h5, h6, p {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
 
 svg {
     vertical-align: middle;
+}
+
+.navbar {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  background-color: white;
+
+}
+.navbar .nav-link.active {
+
+    color: #EB8080 !important;
+
+    font-weight: 600;
+}
+
+.navbar .nav-link:hover {
+
+    color: #EB8080 !important;
+
+    font-weight: 600;
+}
+
+.flower-bg {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    width: 55%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.flower-container {
+
+    position: relative;
+    z-index: 1;
 }
