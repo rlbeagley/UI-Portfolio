@@ -1,5 +1,4 @@
 .hero-section {
-    height: 500px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -33,7 +32,7 @@
 }
 
 .hero-content h1 {
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: 800;
   color:#572C19;
 }
@@ -55,11 +54,11 @@ h2 {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 5rem;
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 h3, h4, h5, h6, p {
