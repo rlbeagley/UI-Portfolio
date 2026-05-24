@@ -3,6 +3,10 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    background-image: url('../svgs/polkadots.svg');
+    background-repeat: repeat-x;
+    background-position: bottom left;
+    background-size: 50%;
 
 }
 
@@ -43,6 +47,21 @@ h1, h2 {
   font-weight: bold;
 }
 
+h2 {
+  font-family: "Ranchers", sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
 h3, h4, h5, h6, p {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
@@ -63,7 +82,7 @@ svg {
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
-  background-color: white;
+  background-color: #FBFDF7;
 
 }
 .navbar .nav-link.active {
@@ -71,6 +90,7 @@ svg {
     color: #EB8080 !important;
 
     font-weight: 600;
+    
 }
 
 .navbar .nav-link:hover {
@@ -83,8 +103,8 @@ svg {
 .flower-bg {
     position: absolute;
     top: 50%;
-    left: 8%;
-    width: 55%;
+    left: 3%;
+    width: 50%;
     transform: translateY(-50%);
     pointer-events: none;
     z-index: 0;
@@ -94,4 +114,68 @@ svg {
 
     position: relative;
     z-index: 1;
+}
+
+ul {
+    list-style-position: inside;
+    list-style: none;
+    padding-left: 0;
+}
+
+.custom-list li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.custom-list li::before {
+    content: "";
+
+    width: 14px;
+    height: 14px;
+
+    background-image: url("../svgs/flower-bullet.svg");
+    fill:#572C19;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#workflow {
+    position: relative;
+    z-index: 0;
+    background-color: #EB8080;
+}
+
+#workflow::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('../svgs/lots-of-dots.svg');
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 100%;
+    opacity: 0.3;
+    z-index: 0;
+}
+
+#workflow > * {
+  z-index: 1;
+}
+
+.section-divider {
+    position: absolute;
+    top: -60px;        
+    left: 45%; /* centered on page */
+    transform-origin: center;
+    transform: translateX(-50%) rotate(20deg);
+    width: 120px; 
+    height: 120px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 18rem;
+    object-fit: cover;
 }
