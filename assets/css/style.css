@@ -111,7 +111,6 @@ svg {
 }
 
 .flower-container {
-
     position: relative;
     z-index: 1;
 }
@@ -167,7 +166,7 @@ ul {
 .section-divider {
     position: absolute;
     top: -60px;        
-    left: 45%; /* centered on page */
+    left: 50%; /* centered on page */
     transform-origin: center;
     transform: translateX(-50%) rotate(20deg);
     width: 120px; 
@@ -178,4 +177,13 @@ ul {
     width: 100%;
     height: 18rem;
     object-fit: cover;
+}
+
+body {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+}
+
+body::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
 }
